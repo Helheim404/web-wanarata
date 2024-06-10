@@ -1,0 +1,1703 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Sans+Pro&display=swap');
+
+body {
+    background-color: #eaf4f0;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*heading video*/
+.showcase {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.showcase .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.showcase .video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.65;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase .video-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.showcase .content {
+    z-index: 10;
+    margin-top: 120px;
+    padding-left: 120px;
+}
+
+.showcase .content h1 {
+    font-weight: 600;
+    font-size: 74px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.showcase .content .lokasi {
+    font-size: 20px;
+}
+
+.showcase .content .lokasi i {
+    padding-right: 12px;
+}
+
+nav {
+    position: relative;
+    z-index: 10;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:link,
+.navbar .navbar-nav .nav-item .nav-link:visited {
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:active {
+    color: #c3eb78;
+    margin-right: 10px;
+    border-bottom: 2px solid #c3eb78;
+    transition: border-bottom 0.3s;
+}
+
+.navbar .navbar-brand img {
+    height: 10.981vw;
+    color: #fff;
+    padding: 1.464vw 0.732vw;
+    object-fit: cover;
+}
+
+.navbar .navbar-brand:hover {
+    color: #c3eb78;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(195,235,120, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #c3eb78;
+}
+
+.navbar .navbar-collapse {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+/*about*/
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: #eaf4f0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color: #1c5253;
+}
+
+header.masthead h1 {
+    font-size: 3rem;
+}
+
+
+/*fasilitas*/
+.fasilitas {
+    background-color: #c3eb78;
+    color: #1c5253;
+}
+
+.fasilitas .mx-auto h2 {
+    font-size: 2.25em;
+    padding-top: 1.875rem;
+    padding-bottom: 1.25rem;
+}
+
+.fasilitas .mx-auto .row .mx-auto .gambarfasilitas {
+    margin: 1em;
+}
+
+.fasilitas .mx-auto .row .mx-auto .teksfasilitas {
+    font-size: 1.625em;
+    font-weight: 500;
+    padding: 0.625em 0;
+}
+
+
+/*harga dan paket*/
+section.harga {
+    background: #eaf4f0;
+    color: #1c5253;
+}
+
+.harga .container h2 {
+    padding-bottom: 30px;
+}
+
+.harga .card {
+    background: #c3eb78;
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.harga hr {
+    margin: 1.5rem 0;
+}
+
+.harga .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.harga .card-price {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.harga .card-price .period {
+    font-size: 0.8rem;
+}
+
+.harga ul li {
+    margin-bottom: 1rem;
+}
+
+.harga .text-muted {
+    opacity: 1;
+}
+
+.harga .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+    .pricing .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .pricing .card:hover .btn {
+        opacity: 1;
+    }
+}
+
+
+/*gambarpemanis*/
+
+.gambarpemanis {
+    padding-bottom: 1.25em;
+    background-image: url("/asset/img/coverbg.jpg");
+    height: 12.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Galeri*/
+section.galeri {
+    background-color: #eaf4f0;
+    color: #1c5253;
+}
+
+section.galeri h2 {
+    font-size: 2.25em;
+    padding-top: 2.25rem;
+    padding-bottom: 1.25rem;
+}
+
+section.galeri .container .row .thumb img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.thumb {
+    margin-bottom: 15px;
+}
+
+.thumb:last-child {
+    margin-bottom: 0;
+}
+
+section.galeri .btn-colour-1 {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+    margin-top: 30px;
+}
+
+/* CSS Image Hover Effects: https://www.nxworld.net/tips/css-image-hover-effects.html */
+.thumb figure img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.thumb figure:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+/*Berita Home*/
+section.berita {
+    background-color: #eaf4f0;
+    color: #1c5253;
+}
+
+section.berita .container .row .card {
+    color: #1c5253;
+}
+
+section.berita .container .row .card:hover {
+    -webkit-box-shadow: -2px 9px 8px -1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -2px 9px 8px -1px rgba(0, 0, 0, 0.5);
+    box-shadow: -2px 9px 8px -1px rgba(0, 0, 0, 0.5);
+}
+
+section.berita .container .row .card a img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+section.berita h2 {
+    font-size: 2.25em;
+    padding-top: 2.25rem;
+    padding-bottom: 1.25rem;
+}
+
+section.berita .container .row .card .card-title a {
+    text-decoration: none;
+    color: #c3eb78;
+}
+
+section.berita .container .row .card .card-title a:hover {
+    text-decoration: none;
+    color: #a3c95b;
+}
+
+section.berita .btn-colour-1 {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*testimoni*/
+section.testimoni {
+    background-color: #1c5253;
+    color: #eaf4f0;
+}
+
+section.testimoni h2 {
+    font-size: 2.25em;
+    padding-top: 2.25rem;
+    padding-bottom: 1.25rem;
+}
+
+section.testimoni .container .row .carousel .carousel-inner .carousel-item h5 {
+    color: #c3eb78;
+}
+
+.carousel-item {
+    margin-bottom: 150px;
+}
+
+.carousel-control-prev {
+    left: -80px;
+}
+
+.carousel-control-next {
+    right: -80px;
+}
+
+.carousel-indicators {
+    visibility: hidden;
+    top: 320px;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+    .carousel-inner .carousel-item p {
+        font-size: 14px;
+    }
+
+    .carousel-control-prev {
+        left: -40px;
+    }
+
+    .carousel-control-next {
+        right: -40px;
+    }
+
+    .carousel-indicators {
+        visibility: hidden;
+        top: 300px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+    .carousel-inner .carousel-item p {
+        font-size: 14px;
+    }
+
+    .carousel-control-prev {
+        left: -40px;
+    }
+
+    .carousel-control-next {
+        right: -40px;
+    }
+
+    .carousel-indicators {
+        top: 400px;
+    }
+}
+
+.footer {
+    background-color: #000000;
+}
+
+.footer .container-fluid {
+    padding: 20px;
+}
+
+.footer .container-fluid .row .bag1 {
+    margin: 20px 0 20px 0;
+}
+
+.footer .container-fluid .row .bag2 {
+    padding-top: 10px;
+    margin: 20px 0 20px 0;
+}
+
+.footer .container-fluid .row .bag2 ul li {
+    padding-bottom: 10px;
+}
+
+.footer .container-fluid .row .bag3 {
+    padding-top: 10px;
+    margin: 20px 0 20px 0;
+}
+
+header.headtentang {
+    position: relative;
+    background-image: url("img/bgtentangkami.jpg");
+    max-width: 100%;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header.headgaleri {
+    position: relative;
+    background-image: url("img/bggaleri.png");
+    max-width: 100%;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header.headberita {
+    position: relative;
+    background-image: url("img/bgberita.jpg");
+    max-width: 100%;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header.headhargapaket {
+    position: relative;
+    background-image: url("img/bgharga.jpg");
+    max-width: 100%;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*posisi dari teks di dalam header*/
+.tekstentang,
+.tekshargapaket,
+.teksgaleri,
+.teksberita {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+}
+
+.tekstentang,
+.teksharga,
+.teksgaleri,
+.teksberita,
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+/*berita*/
+.container h2.infoo {
+    padding-top: 2em;
+    padding-bottom: 1.25em;
+    font-size: 30px;
+}
+
+
+/*galeri*/
+.container .gambargaleri {
+    padding-top: 48px;
+    padding-bottom: 32px;
+}
+
+.container .gambargaleri .row {
+    padding: 3px;
+}
+
+.container .gambargaleri .row img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container .tombolnextgaleri {
+    padding-top: 0px;
+    padding-bottom: 48px;
+}
+
+
+/*page harga*/
+
+/*harga dan paket*/
+
+.container section.paket {
+    background: #eaf4f0;
+    color: #1c5253;
+}
+
+.paket .container h2 {
+    padding-bottom: 30px;
+}
+
+.paket .card {
+    background: #c3eb78;
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.paket hr {
+    margin: 1.5rem 0;
+}
+
+.paket .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.paket .card-price {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.paket .card-price .period {
+    font-size: 0.8rem;
+}
+
+.paket ul li {
+    margin-bottom: 1rem;
+}
+
+.paket .text-muted {
+    opacity: 1;
+}
+
+.paket .note {
+    font-size: 12px;
+}
+
+.paket .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+    .pricing .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .pricing .card:hover .btn {
+        opacity: 1;
+    }
+}
+
+.container .harga {
+    padding-top: 96px;
+    padding-bottom: 60px;
+}
+
+.container .harga h2 {
+    padding-top: 24px;
+    font-size: 32px;
+    padding-bottom: 40px;
+}
+
+.container .harga .card-deck .card .card-body p.price {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 40px;
+}
+
+.container .harga .card-deck .card .card-body h3 {
+    font-size: 21px;
+}
+
+.container .harga .card-deck .card .card-body .keterangan {
+    padding: 0 24px;
+}
+
+.container .harga .card-deck .card .card-body .keterangan .icon {
+    width: 10%;
+    font-size: 13px;
+}
+
+.container .harga .card-deck .card .card-body .keterangan .texticon {
+    width: 90%;
+}
+
+.container .harga .card-deck .card .card-body .keterangan .texticon p {
+    font-size: 13px;
+    padding-bottom: 8px;
+    padding-left: 6px;
+}
+
+/*tentang kami*/
+
+.container .infowanarata {
+    margin-top: 150px 0;
+}
+
+/*denah*/
+.container .denah .isidenah {
+    height: 400px;
+    padding: 0px 100px;
+    background-color: #c3eb78;
+}
+
+.container .lokasi h2 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-size: 30px;
+}
+
+.container .lokasi .lokasiwanarata iframe {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container .denah h2 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-size: 30px;
+}
+
+.container .denah .isidenah img.n
+
+/*pintu masuk*/
+    {
+
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.container .denah .isidenah img.pintumasuk
+
+/*pintu masuk*/
+    {
+
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 70px;
+    left: 500px;
+}
+
+.container .denah .isidenah img.parkir
+
+/*parkir*/
+    {
+
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 100px;
+    bottom: 50px;
+    left: 530px;
+}
+
+.container .denah .isidenah img.loket
+
+/*loket*/
+    {
+
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 530px;
+}
+
+.container .denah .isidenah img.gazebo
+
+/*gazebo*/
+    {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: 380px;
+}
+
+.container .denah .isidenah img.rumahpohon
+
+/*rumah pohon*/
+    {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: 250px;
+}
+
+.container .denah .isidenah img.spotfoto1
+
+/*spot foto*/
+    {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 70px;
+    left: 180px;
+}
+
+.container .denah .isidenah img.pendopo
+
+/*pendopo*/
+    {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 150px;
+    left: 180px;
+}
+
+.container .denah .isidenah img.kolamrenang
+
+/*kolam renang*/
+    {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.container .denah .isidenah img.spotfoto2
+
+/*spot foto*/
+    {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+
+.container .denah .isidenah img.warung1
+
+/*warung*/
+    {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 70px;
+    left: 180px;
+}
+
+.container .denah .isidenah img.mushola
+
+/*mushola*/
+    {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 270px;
+}
+
+.container .denah .isidenah img.cafe
+
+/*cafe*/
+    {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 380px;
+}
+
+.container .denah .isidenah img.warung2
+
+/*warung*/
+    {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 170px;
+    left: 450px;
+}
+
+.container .denah .isidenah img.flyingfox
+
+/*flying fox*/
+    {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 200px;
+    left: 300px;
+}
+
+/* Popover Header */
+.popover-title {
+    background-color: #73AD21;
+    color: #FFFFFF;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Popover Body */
+.popover-content {
+    background-color: coral;
+    color: #FFFFFF;
+    padding: 25px;
+}
+
+/*garis*/
+.container .denah .isidenah .garis1 {
+    border: 2px solid #eaf4f0;
+    height: 225px;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 130px;
+    bottom: 25px;
+}
+
+.container .denah .isidenah .garis2 {
+    border: 2px solid #eaf4f0;
+    height: 170px;
+    position: absolute;
+    left: 242px;
+    bottom: 90px;
+}
+
+.container .denah .isidenah .garis3 {
+    border: 2px solid #eaf4f0;
+    height: 260px;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 370px;
+    bottom: -40px;
+}
+
+.container .denah .isidenah .garis4 {
+    border: 2px solid #eaf4f0;
+    height: 50px;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 260px;
+    bottom: 252px;
+}
+
+.container .denah .isidenah .garis5 {
+    border: 2px solid #eaf4f0;
+    height: 220px;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 387px;
+    bottom: 185px;
+}
+
+.container .denah .isidenah .garis6 {
+    border: 2px solid #eaf4f0;
+    height: 205px;
+    position: absolute;
+    left: 440px;
+    bottom: 90px;
+}
+
+/*gambar denah*/
+.container .gambardenah {
+    padding: 20px 0;
+}
+
+.container .gambardenah .imgBox, .container .gambardenah .imgBox2, .container .gambardenah .imgBox3, .container .gambardenah .imgBox4, .container .gambardenah .imgBox5, .container .gambardenah .imgBox6 {
+    max-width: 100%;
+    margin: 50px auto 20px;
+    margin: 10px;
+}
+
+.container .gambardenah .imgBox img, .container .gambardenah .imgBox2 img, .container .gambardenah .imgBox3 img, .container .gambardenah .imgBox4 img, .container .gambardenah .imgBox5 img, .container .gambardenah .imgBox6 img {
+    width: 500px;
+    height: 300px;
+    width: 100%;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+.container .gambardenah ul.thumb, .container .gambardenah ul.thumb2, .container .gambardenah ul.thumb3, .container .gambardenah ul.thumb4, .container .gambardenah ul.thumb5, .container .gambardenah ul.thumb6 {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .gambardenah ul.thumb li, .container .gambardenah ul.thumb2 li, .container .gambardenah ul.thumb3 li, .container .gambardenah ul.thumb4 li, .container .gambardenah ul.thumb5 li, .container .gambardenah ul.thumb6 li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.container .gambardenah ul.thumb li img, .container .gambardenah ul.thumb2 li img, .container .gambardenah ul.thumb3 li img, .container .gambardenah ul.thumb4 li img, .container .gambardenah ul.thumb5 li img, .container .gambardenah ul.thumb6 li img {
+    width: 1000px;
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+	margin-bottom:100px;
+}
+
+.float {
+    z-index: 10;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1bd741;
+    color: #FFFfff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float:hover {
+    background-color: #ffffff;
+    color: #1bd741;
+}
+
+.my-float {
+    margin-top: 17px;
+    margin-left: 2px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .showcase .content {
+        margin-top: 5.75em;
+        padding-left: 5.75em;
+    }
+
+    .showcase .content h1 {
+        margin-top: 1em;
+        font-size: 3.5625em;
+        margin-bottom: 0.5em;
+    }
+
+    .showcase .content .lokasi {
+        font-size: 0.9375em;
+    }
+
+    .showcase .content .lokasi i {
+        padding-right: 0.5625em;
+    }
+
+    .navbar .navbar-brand img {
+        height: 5.625em;
+        object-fit: cover;
+    }
+
+    .navbar .navbar-collapse {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 0.625em 0;
+    }
+
+
+    .fasilitas .mx-auto .row .mx-auto .teksfasilitas {
+        font-size: 1.25em;
+        padding: 0.5em 0;
+    }
+
+
+    .tekstentang,
+    .teksharga,
+    .teksgaleri,
+    .teksberita,
+    h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+
+    .container .denah .isidenah img.pintumasuk
+
+    /*pintu masuk*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        bottom: 80px;
+        left: 385px;
+    }
+
+    .container .denah .isidenah img.parkir
+
+    /*parkir*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 75px;
+        bottom: 38px;
+        left: 413px;
+    }
+
+    .container .denah .isidenah img.loket
+
+    /*loket*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        bottom: 38px;
+        left: 413px;
+    }
+
+    .container .denah .isidenah img.gazebo
+
+    /*gazebo*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        bottom: 23px;
+        left: 285px;
+    }
+
+    .container .denah .isidenah img.rumahpohon
+
+    /*rumah pohon*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        bottom: 23px;
+        left: 188px;
+    }
+
+    .container .denah .isidenah img.spotfoto1
+
+    /*spot foto*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        bottom: 53px;
+        left: 135px;
+    }
+
+    .container .denah .isidenah img.pendopo
+
+    /*pendopo*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 113px;
+        left: 135px;
+    }
+
+    .container .denah .isidenah img.kolamrenang
+
+    /*kolam renang*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 150px;
+        left: 75px;
+    }
+
+    .container .denah .isidenah img.spotfoto2
+
+    /*spot foto*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 150px;
+        left: 15px;
+    }
+
+    .container .denah .isidenah img.warung1
+
+    /*warung*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 53px;
+        left: 135px;
+    }
+
+    .container .denah .isidenah img.mushola
+
+    /*mushola*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 8px;
+        left: 203px;
+    }
+
+    .container .denah .isidenah img.cafe
+
+    /*cafe*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 8px;
+        left: 285px;
+    }
+
+    .container .denah .isidenah img.warung2
+
+    /*warung*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        bottom: 128px;
+        left: 338px;
+    }
+
+    .container .denah .isidenah img.flyingfox
+
+    /*flying fox*/
+        {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        bottom: 150px;
+        left: 225px;
+    }
+
+    /*garis*/
+    .container .denah .isidenah .garis1 {
+        border: 2px solid #eaf4f0;
+        height: 170px;
+        position: absolute;
+        transform: rotate(90deg);
+        left: 100px;
+        bottom: 120px;
+    }
+
+    .container .denah .isidenah .garis2 {
+        border: 2px solid #eaf4f0;
+        height: 200px;
+        position: absolute;
+        left: 185px;
+        bottom: 95px;
+    }
+
+    .container .denah .isidenah .garis3 {
+        border: 2px solid #eaf4f0;
+        height: 200px;
+        position: absolute;
+        transform: rotate(90deg);
+        left: 283px;
+        bottom: -5px;
+    }
+
+    .container .denah .isidenah .garis4 {
+        border: 2px solid #eaf4f0;
+        height: 30px;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 195px;
+        bottom: 290px;
+    }
+
+    .container .denah .isidenah .garis5 {
+        border: 2px solid #eaf4f0;
+        height: 190px;
+        position: absolute;
+        transform: rotate(90deg);
+        left: 300px;
+        bottom: 220px;
+    }
+
+    .container .denah .isidenah .garis6 {
+        border: 2px solid #eaf4f0;
+        height: 222px;
+        position: absolute;
+        left: 330px;
+        bottom: 92px;
+    }
+
+    .float {
+        width: 65px;
+        height: 65px;
+        bottom: 22px;
+        right: 22px;
+    }
+
+    .float i.fa-3x {
+        font-size: 40px;
+        bottom: 10px;
+        right: 5px;
+    }
+
+    .my-float {
+        margin-top: 12px;
+        margin-right: 2px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .showcase .content {
+        margin-top: 5.5em;
+        padding-left: 1.5em;
+        padding-right: 0.625em;
+    }
+
+    .showcase .content h1 {
+        margin-top: 1.75em;
+        font-size: 2.625em;
+        margin-bottom: 0.625em;
+    }
+
+    .showcase .content .lokasi {
+        padding: 6vh 3vw;
+        font-size: 0.75em;
+    }
+
+    .showcase .content .lokasi i {
+        padding-right: 0.4375em;
+    }
+
+    .tekstentang,
+    .teksharga,
+    .teksgaleri,
+    .teksberita,
+    h1 {
+        font-size: 34px;
+    }
+
+
+    /*berita*/
+
+    .navbar .navbar-brand img {
+        height: 5.5em;
+    }
+
+    .navbar .navbar-collapse {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 0.625em 0;
+    }
+
+    .container .denah .isidenah img
+
+    /*pintu masuk*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        bottom: 116px;
+        left: 275px;
+    }
+
+    .container .denah .isidenah img:nth-child(1)
+
+    /*parkir*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 105px;
+        bottom: 78px;
+        left: 303px;
+    }
+
+    .container .denah .isidenah img:nth-child(2)
+
+    /*loket*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        bottom: 78px;
+        right: 303px;
+    }
+
+    .container .denah .isidenah img:nth-child(3)
+
+    /*gazebo*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        bottom: 78px;
+        left: 209px;
+    }
+
+    .container .denah .isidenah img:nth-child(4)
+
+    /*rumah pohon*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        bottom: 67px;
+        left: 128px;
+    }
+
+    .container .denah .isidenah img:nth-child(5)
+
+    /*spot foto*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        bottom: 89px;
+        left: 99px;
+    }
+
+    .container .denah .isidenah img:nth-child(6)
+
+    /*pendopo*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 133px;
+        left: 99px;
+    }
+
+    .container .denah .isidenah img:nth-child(7)
+
+    /*kolam renang*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 160px;
+        left: 55px;
+    }
+
+    .container .denah .isidenah img:nth-child(8)
+
+    /*spot foto*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 160px;
+        left: 11px;
+    }
+
+    .container .denah .isidenah img:nth-child(9)
+
+    /*warung*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 89px;
+        left: 99px;
+    }
+
+    .container .denah .isidenah img:nth-child(10)
+
+    /*mushola*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 56px;
+        left: 149px;
+    }
+
+    .container .denah .isidenah img:nth-child(11)
+
+    /*cafe*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 56px;
+        left: 209px;
+    }
+
+    .container .denah .isidenah img:nth-child(12)
+
+    /*warung*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        bottom: 144px;
+        left: 248px;
+    }
+
+    .container .denah .isidenah img:nth-child(13)
+
+    /*flying fox*/
+        {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        bottom: 160px;
+        left: 165px;
+    }
+
+
+    .float {
+        width: 56px;
+        height: 56px;
+        bottom: 18px;
+        right: 18px;
+    }
+
+    .float i.fa-3x {
+        font-size: 30px;
+        bottom: 10px;
+        right: 5px;
+    }
+
+    .my-float {
+        margin-top: 12px;
+        margin-right: 2px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /*heading video*/
+
+    .showcase .content {
+        margin-top: 5.5em;
+        padding-left: 1.25em;
+        padding-right: 0.5625em;
+    }
+
+    .showcase .content h1 {
+        margin-top: 1.75em;
+        font-size: 2.25em;
+        margin-bottom: 0.3em;
+    }
+
+    .showcase .content .lokasi {
+        font-size: 0.625em;
+    }
+
+    .showcase .content .lokasi i {
+        padding-right: 0.4375em;
+    }
+
+    .navbar .navbar-brand img {
+        height: 4.5em;
+    }
+
+    .navbar .navbar-collapse {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 0.625em 0;
+    }
+
+    /*Every Header Text*/
+    .tekstentang,
+    .teksharga,
+    .teksgaleri,
+    .teksberita,
+    h1 {
+        font-size: 30px;
+    }
+
+    .container .denah .isidenah img
+
+    /*pintu masuk*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 168px;
+        left: 200px;
+    }
+
+    .container .denah .isidenah img:nth-child(1)
+
+    /*parkir*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 90px;
+        bottom: 140px;
+        left: 220px;
+    }
+
+    .container .denah .isidenah img:nth-child(2)
+
+    /*loket*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 140px;
+        right: 220px;
+    }
+
+    .container .denah .isidenah img:nth-child(3)
+
+    /*gazebo*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 132px;
+        left: 152px;
+    }
+
+    .container .denah .isidenah img:nth-child(4)
+
+    /*rumah pohon*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 132px;
+        left: 100px;
+    }
+
+    .container .denah .isidenah img:nth-child(5)
+
+    /*spot foto*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 148px;
+        left: 72px;
+    }
+
+    .container .denah .isidenah img:nth-child(6)
+
+    /*pendopo*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 200px;
+        left: 72px;
+    }
+
+    .container .denah .isidenah img:nth-child(7)
+
+    /*kolam renang*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 200px;
+        left: 40px;
+    }
+
+    .container .denah .isidenah img:nth-child(8)
+
+    /*spot foto*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 200px;
+        left: 8px;
+    }
+
+    .container .denah .isidenah img:nth-child(9)
+
+    /*warung*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 148px;
+        left: 72px;
+    }
+
+    .container .denah .isidenah img:nth-child(10)
+
+    /*mushola*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 124px;
+        left: 108px;
+    }
+
+    .container .denah .isidenah img:nth-child(11)
+
+    /*cafe*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 124px;
+        left: 152px;
+    }
+
+    .container .denah .isidenah img:nth-child(12)
+
+    /*warung*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 188px;
+        left: 180px;
+    }
+
+    .container .denah .isidenah img:nth-child(13)
+
+    /*flying fox*/
+        {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 200px;
+        left: 120px;
+    }
+
+    .float {
+        width: 40px;
+        height: 40px;
+        bottom: 12px;
+        right: 12px;
+    }
+
+    .float i.fa-3x {
+        font-size: 26px;
+        bottom: 10px;
+        right: 12px;
+    }
+
+    .my-float {
+        margin-top: 7px;
+        margin-left: 2px;
+    }
+
+}
